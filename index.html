@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        * {}
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Payment gateway</title>
+</head>
+
+<body> <div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10 offset-md-1">
+    <div class="card card-outline-secondary ">
+    <!--TITLE-->
+    <div class="card-header d-flex align-items-center justify-content-center">
+        <h3 class="mb-0">Payment form example</h3>
+      </div>
+    <!--TITLE-->
+
+       <!--ALERTA-->
+          <!--ALERTA-->
+
+             <!--CARD & AMOUNT-->
+             <div class="d-inline-flex py-3">
+             <div class="col-md-4 mb-2">
+                <label for="validationServer01">Card Number</label>
+                <input type="number" class="form-control is-valid" id="validationServer01" placeholder="0000 0000 0000 0000"  maxlength="16" required>
+
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationServer02">Cvv</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="000"  maxlength="3" required>
+
+            </div>
+                <div class="col-md-4 mb-2">
+                    <label for="validationAmount" class="form-label">Amount in USD</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">$</span>
+                      <input 
+                        type="number" 
+                        class="form-control"
+                        id="validationAmount"
+                        placeholder="0.00"
+                        required
+                      >
+                      <div class="valid-feedback">
+                        Valid amount!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter a valid dollar amount.
+                      </div>
+                    </div>
+                  </div>
+                <!--CARD & AMOUNT-->
+
+                   <!--NAME-->
+                      <!--NAME-->
+
+                      <!--CITY-->
+                      <!--CITY-->
+
+                      <!--ACEPTED PAY & MENSAJE-->
+                      <!--ACEPTED PAY & MENSAJE-->
+
+                      <!--ENVIO Y CIERRE-->
+                      <!--ENVIO Y CIERRE-->
+                  </div>
+<!--NAME-->
+<div class="form-row d-flex align-items-center justify-content-between px-3">
+<div class="col-md-6 mb-3">
+    <label for="validationDefault01">First name</label>
+    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="validationDefault02">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+  </div>
+</div>
+<!--NAME-->
+
+<!--city-->
+<div class="form-row justify-content-between px-3">
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip03">City</label>
+          <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip04">State</label>
+          <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+          <div class="invalid-tooltip">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip05">Zip</label>
+          <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+      </div>
+<!--city-->
+<!--PAY ACCEPTED-->
+<div class="form-row justify-content-between px-3">
+<div class="col-md-4">
+  <p for="exampleAccount">We accept:</p>
+    <div class="form-check py-1 px-1">
+
+        <div class="form-check form-check-inline"> 
+            <input class="form-check-input" type="radio" id="mastercard" value="mastercard" name="paymentMethod" required> 
+            <label class="form-check-label"for="mastercard">
+                 <i class="fab fa-cc-mastercard fa-2x"></i> 
+                </label>
+             </div>
+
+        <div class="form-check form-check-inline"> 
+            <input class="form-check-input" type="radio" id="visa" value="visa" name="paymentMethod" required> 
+            <label class="form-check-label" for="visa"> 
+                <i class="fab fa-cc-visa fa-2x"></i> 
+            </label> 
+                </div>
+
+        <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" id="diners" value="diners" name="paymentMethod" required> <label class="form-check-label" for="diners"> <i
+                    class="fab fa-cc-diners-club fa-2x"></i>
+                 </label>
+
+                 </div>
+        <div class="form-check form-check-inline"> 
+            <input class="form-check-input" type="radio" id="amex" value="amex"name="paymentMethod" required> 
+            <label class="form-check-label" for="amex"> 
+                <i class="fab fa-cc-amex fa-2x"></i> </label> 
+                </div>
+    </div>
+                  </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <small class="text-muted">Add any notes here.</small>
+                </div>
+                  </div>
+                  </div>
+                  <!--PAY ACCEPTED-->
+<!--SEND OR CLOSE-->
+<div class="form-row btn outline-secondary justify-content-end">
+  <div class="card-footer">
+    <div class="float-right">
+      <button class="btn btn-secondary" type="reset">Cancel</button>
+      <button id="sendForm" class="btn btn-primary" type="button" />Send</button>
+    </div>
+  </div>
+</div>
+                  <!--SEND OR CLOSE-->
+                </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
